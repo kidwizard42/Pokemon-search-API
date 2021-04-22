@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- pokeball favicon  here's the link to the creator https://www.favicon.cc/?action=icon&file_id=838590 -->
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIAACIiAAIiIiACIiIgAiIiIiIiIiACIhIiIiIiIAAiESIiIiIAACIiIiIiIgAAAiIiIiIgAAAAAiIiIAAAAAAAAAAAAAD4HwAA5+cAAN/7AAC//QAAvn0AAH2+AABBggAAAYAAAAAAAAAAAAAAAAAAAIABAACAAQAAwAMAAOAHAAD4HwAA"
+    rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+  <title>Pokemon Search Bar</title>
+</head>
+
+<body>
+  <div class="intro">
+    <h1>POKÉMON SEARCH!</h1>
+<p>Here, you can either search for a pokemon or click the "Random Pokémon" button to see a random pokemon card</p>
+  <form id="pokemonSearch" action="index.html" method="get">
+    <input type="text" name="search" value="" placeholder="TYPE IN A POKÉMON NAME " >
+    <!-- "type in a pokemon name or pokemon ID#" THE PLACEHOLDER IF I WANT TO MAKE THIS MORE SOPHISITCATED. -->
+    <button type="submit" name="button"> Who's that Pokémon!</button>
+  </form>
+  <h3>Click this button for a random Pokémon</h3>
+
+  <button  id="randomPokemon"type="button" name="button">Random Pokémon!</button>
+
+</div>
+  <div class="pokemonCanvas" id="pokemonCard"></div>
+<!-- This is here so I can stylet the cards without having to keep making api calls. -->
+  <!-- <div class="newCard">
+    <h6 class="h6-name">HITMONTOP</h6>
+    <div class="flexRow imgDiv" >
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png" alt="">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/237.png" alt="">
+    </div>
+    <div class="">
+      <p>TYPES:</p>
+      <div class="type electric">
+        ELECTRIC
+      </div>
+      <div class="type fighting">
+        FIGHTING
+      </div>
+    </div>
+
+    <p>If you become enchanted by its smooth, elegant,dance-like kicks, you may get drilled hard.</p>
+<span class="delete-button">X</span>
+  </div> -->
+
+
+
+
+
+</div>
+
+
+  <script src="pokemon.js" charset="utf-8"></script>
+</body>
+
+</html>

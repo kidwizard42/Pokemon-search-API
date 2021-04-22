@@ -1,0 +1,192 @@
+/* When you have a mobile design in mind you can make it in a new file and
+then add all of this inside the media query */
+body, input, button, input::placeholder{
+
+  font-family: 'VT323', monospace;
+}
+body{
+  /* background: white; */
+  background: no-repeat url("https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png");
+
+
+}
+button{
+
+  cursor: pointer;
+  /* border:none; */
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 0 auto 10px;
+
+}
+
+input{
+  border-radius: 20px;
+  font-size: 20px;
+  width:300px;
+  height:30px;
+  text-align: center;
+
+}
+input,button{
+  color:#3D7DCA;
+  background: #FFCB05;
+  border: 5px solid #003A70;
+}
+input::placeholder{
+  color:#3D7DCA;
+}
+
+input:hover,button:hover{
+  color:#003A70;
+  background: #FFCB05;
+  border: 5px solid #3D7DCA;
+  /* transition: all, .25s; */
+}
+/* input:focus,button:focus{
+outline: 2px solid blue;
+} */
+.delete-button{
+  position: absolute;
+  top:10px;
+  right:8px;
+  cursor:pointer;
+}
+.delete-button:hover{
+color:red;
+
+
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro p {
+  max-width: 400px;
+  text-align: center;
+  margin-top: 0;
+}
+.type{
+display: inline-block;
+}
+.newCard{
+  display: flex;
+  flex-direction: column;
+  min-width:250px;
+  max-width: 250px;
+  height:300px;
+color:#3D7DCA;
+background: rgba(148, 251, 255, 0.51);
+/* opacity: .3; */
+  margin:10px;
+  padding:20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  border: 2px solid white;
+
+}
+.newCard p{
+  width:110%;
+  text-align: center;
+
+}
+.flexRow{
+  display: flex;
+}
+.h6-name{
+  font-size: 1.3rem;
+  margin:0 0 0;
+  letter-spacing: 1px;
+  position: absolute;
+  top:40px;
+}
+.pokemonCanvas{
+  width:80%;
+max-height:700px;
+overflow-y: scroll;
+  margin:auto;
+  padding:20px;
+  margin-top: 15px;
+  /* background: blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.imgDiv{
+  margin-top: 25px;
+}
+
+.typeSpace{
+  margin-right: 3px;
+}
+/* ALL POKEMON TYPES UNDER HERE */
+.type{
+  padding:3px;
+  border:1px solid white;
+  color:white;
+  letter-spacing: 2px;
+}
+
+.electric{
+  background: #E5C531 ;
+}
+.fighting{
+   background: #CB5F48 ;
+}
+.bug{
+  background: #94BC4A ;
+}
+
+.dark{
+  background: #736C75 ;
+}
+.dragon{
+  background: #6A7BAF ;
+}
+.fairy{
+  background: #E397D1 ;
+}
+.fire{
+  background: #EA7A3C ;
+}
+.flying{
+  background: #7DA6DE ;
+}
+.ghost{
+  background: #846AB6 ;
+}
+.grass{
+  background: #71C558 ;
+}
+.ground{
+  background: #CC9F4F ;
+}
+.ice{
+  background: #70CBD4 ;
+}
+.normal{
+  background: #AAB09F ;
+}
+.poison{
+  background: #B468B7 ;
+}
+.psychic{
+  background: #E5709B ;
+}
+.rock{
+  background: #B2A061 ;
+}
+.steel{
+  background: #89A1B0 ;
+}
+.water{
+  background: #539AE2 ;
+}

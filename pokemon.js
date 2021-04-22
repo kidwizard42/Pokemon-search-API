@@ -114,8 +114,8 @@ pokemonSearch.addEventListener("submit", async (e) => {
 
       newCard(resS.data.forms[0].name.toUpperCase(), frontImgS, backImgS, allPokemonTypesS, flavorTextS);
     } catch (err) {
-      alert(`Sorry, we cannot find ${searchInput} or it is not in our database. Please check your spelling and try again`)
-      console.log(err)
+      alert(`Sorry, we cannot find ${searchInput} in the database. Please check your spelling and try again.`)
+//       console.log(err)
       pokemonSearch.elements.search.value = "";
     }
     pokemonSearch.elements.search.value = "";
